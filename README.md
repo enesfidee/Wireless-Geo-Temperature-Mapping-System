@@ -1,5 +1,8 @@
 # Wireless-Geo-Temperature-Mapping-System
 
+![image](https://github.com/user-attachments/assets/546f5b67-cf8d-43f1-8a22-8e53bb77ef91)
+
+
 # Introduction
 This project aims to design and build a custom mobile device capable of reading various sensors, parsing data, and broadcasting the required information over Wi-Fi. The data received by a PC will be utilized to draw a temperature map based on dynamic locations (global latitude and longitude) and corresponding ambient temperatures. First, we soldered the Arduino Uno, GPS module, Wi-Fi module, Thermistor, and regulator to the PCB card appropriately. Although Arduino had 3.3 V, we reduced it to 3.3 V using a regulator, otherwise, the project would have failed due to lack of current. Arduino Uno gathers data from the NEO-6M GPS Module and NTC Thermistor and communicates serially with NEO-6M and ESP8266-01. The Wi-Fi module broadcasts data to the PC via Wi-Fi using TCP. We develop a PC program using Python3 to receive and parse data. The program creates an interface displaying dynamic locations with corresponding temperatures, forming a temperature map.
 
